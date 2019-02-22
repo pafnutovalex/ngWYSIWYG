@@ -110,7 +110,7 @@ angular.module('ngWYSIWYG').directive('wysiwygEdit', ['ngpUtils', 'NGP_EVENTS', 
 				} else if (button.type == 'select') {
 					html += 'ng-model="' + button.model + '" ';
 					html += 'ng-options="' + button.options + '" ';
-					html += 'ng-change="' + button.change + '" ';
+					html += 'ng-change="' + button.change + '"> ';
 					html += '<option value="">' + button.title + '</option>';
 				}
 				html += '</' + button.type + '>';
